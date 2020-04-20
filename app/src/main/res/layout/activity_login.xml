@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="ViewModel_Login"
+            type="com.devtides.dogsapp.viewmodel.ViewModel_Login" />
+    </data>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/id_swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_white"
+            tools:context=".view.Activity_Login">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/id_lay_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/id_head_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/login"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/head_text_size"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/id_lay_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/id_lay_1"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <EditText
+                        android:id="@+id/id_edit_user_name"
+                        style="@style/edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_height"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:gravity="left|center"
+                        android:hint="@string/username"
+                        android:text="@={ViewModel_Login.username}" />
+
+                    <EditText
+                        android:id="@+id/id_edit_user_password"
+                        style="@style/edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_height"
+                        android:layout_below="@+id/id_edit_user_name"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp"
+                        android:gravity="left|center"
+                        android:hint="@string/password"
+                        android:inputType="textPassword"
+                        android:text="@={ViewModel_Login.password}" />
+
+                    <TextView
+                        android:id="@+id/id_txt_forgot_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/id_edit_user_password"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="15dp"
+                        android:text="@string/forgot_password"
+                        android:textColor="@color/color_light_blue" />
+
+                    <Button
+                        android:id="@+id/id_btn_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/bth_height"
+                        android:layout_below="@+id/id_txt_forgot_password"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/color_light_green"
+                        android:onClick="@{(v) -> ViewModel_Login.onClick(v)}"
+                        android:text="@string/login"
+                        android:textColor="@color/color_white" />
+
+                    <Button
+                        android:id="@+id/id_btn_candidate"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/bth_height"
+                        android:layout_below="@+id/id_btn_login"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/color_light_blue"
+                        android:text="@string/candidate"
+                        android:textAllCaps="false"
+                        android:textColor="@color/color_white" />
+
+                    <Button
+                        android:id="@+id/id_btn_recruiter"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/bth_height"
+                        android:layout_below="@+id/id_btn_candidate"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/color_light_blue"
+                        android:text="@string/recruiter"
+                        android:textAllCaps="false"
+                        android:textColor="@color/color_white" />
+                </RelativeLayout>
+
+                <ProgressBar
+                    android:id="@+id/id_progress_bar"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</layout>

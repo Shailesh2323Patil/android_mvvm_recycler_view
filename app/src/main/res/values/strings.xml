@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">DogsApp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="candidate">I am Candidate</string>
+    <string name="city">City</string>
+    <string name="company_name">Company Name</string>
+    <string name="confirm_password">Confirm Password</string>
+
+    <string name="dashboard">DashBoard</string>
+
+    <string name="error">Error</string>
+    <string name="email">Email</string>
+    <string name="enter_city">Enter City</string>
+    <string name="enter_company">Enter Company Name</string>
+    <string name="enter_confirm_password">Enter Confirm Password</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_valid_email">Enter Valid Email</string>
+    <string name="enter_first_name">Enter First Name</string>
+    <string name="enter_last_name">Enter Last Name</string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_valid_password">Enter Valid Password</string>
+    <string name="enter_role">Enter Role</string>
+    <string name="enter_verify_otp">Enter Verification OTP</string>
+
+    <string name="first_name">First Name</string>
+    <string name="forgot_password">Forgot Password</string>
+
+    <string name="i_am_experienced">I am Experienced</string>
+    <string name="i_am_fresher">I am fresher</string>
+
+    <string name="last_name">Last Name</string>
+    <string name="login">Login</string>
+
+    <string name="mobile">Mobile Number</string>
+
+    <string name="ok">Ok</string>
+    <string name="or">OR</string>
+
+    <string name="password">Password</string>
+    <string name="password_not_match">Password Not Match</string>
+
+    <string name="recruiter">I am Recruiter</string>
+    <string name="register">Register As Candidate</string>
+    <string name="request_permission">You need to allow access to both the permissions</string>
+
+    <string name="select_months">Select Months</string>
+    <string name="select_resume">Select Your Resume File</string>
+    <string name="select_years">Select Year</string>
+    <string name="sign_up">Sign Up</string>
+
+    <string name="upload_resume">Upload Resume</string>
+    <string name="username">Username</string>
+
+    <string name="verify_otp">Verify OTP</string>
+</resources>
